@@ -7,34 +7,29 @@
 header {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 1.5rem 7rem;
     background: #fff;
 }
 
-.hero-section {
-    height: 130vh;
+.hero-section-box{
     width: 100%;
+    height: 100vh;
     background-image: url(../img/hero-bg.jpg);
     background-repeat: no-repeat;
-    overflow: hidden;
+    background-position: 85% 5%;
+    padding: 15rem 0 0 4rem;
     color: #fff;
 }
 
-
-.hero-section-box{
-    margin-left:6rem;
-    padding-top: 18rem;
-}
-
 .hero-section .hero-text-one {
-    font-size: 3.7rem;
+    font-size: 3.5rem;
     font-weight: lighter;
 }
 
 .hero-section .hero-text-two {
-    font-size: 6.5rem;
+    font-size: 6rem;
     font-family: 'Archivo Black', sans-serif;
     font-weight: bolder;
     padding-bottom: 1.3rem;
@@ -42,14 +37,6 @@ header {
 
 .d-flex {
     display: flex;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.space-btw {
-    justify-content: space-between;
 }
 
 .align-center {
@@ -63,38 +50,31 @@ header {
 .custom-font {
     font-family: 'Abel', sans-serif;
 }
-/*.hero-container::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 75%;
-    height: 10px;
-    background-color: #fff;
-}*/
-.rectangle {
-    height: 0.7rem;
-    width: 40rem;
-    align-items: center;
-    background-color: #fff;
-}
+
 .hero-section .hero-container {
     margin-top: 2rem;
 }
 
+.rectangle {
+    height: 0.7rem;
+    width: 34rem;
+    align-items: center;
+    background-color: #fff;
+}
+
 .hero-section h6 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: sans-serif;
     font-weight: lighter;
 }
 
 .hero-section .hero-services-2 {
-    padding: 0 8rem;
+    padding: 0 5rem;
 }
 
 .hero-section .hero-container img{
-    width: 5.6rem;
+    width: 5.5rem;
+    padding-bottom: 1.8rem;
 }
 
 .book-now-section {
@@ -142,27 +122,28 @@ header {
 }
 
 .need-help-section {
-    width: 90%;
-    height: 90vh;
-    margin: 4rem 12rem;
+    width: 100%;
+    padding: 4rem 9rem;
 }
 
-.need-help-section .left-container, .right-container {
-    width: 43%;
+.need-help-section .left-container{
+    width: 50%;
+    padding-right: 2rem;
 }
 
 .need-help-section .left-container img {
-    width: 95%;
-    height: 30rem;
+    width: 100%;
     padding-bottom: 4rem;
 }
-
 
 .need-help-section .left-container p {
     font-size: 1.3rem;
     font-weight: lighter;
-    text-align: left;
     padding: 0 3.5rem;
+}
+
+.need-help-section .right-container {
+    width: 50%;
 }
 
 .need-help-section .right-container h2 {
@@ -179,24 +160,33 @@ header {
 }
 
 .need-help-section .right-container img {
-    width: 95%;
-    height: 30rem;
+    width: 100%;
     padding-top: 5rem;
 }
 
 .best-quality-section {
-    height: auto;
-    padding: 0 6rem;
+    width: 100%;
+    height: 125vh;
     background: rgb(211, 209, 209);
 }
 
-.best-quality-section img {
-    height: auto;
-    width: 33rem;
+.best-quality-section .container {
+    width: 48%;
+    /*margin: 0 8rem 0 2rem;*/
+}
+.best-quality-section .img-container {
+    background-image: url(../img/quality.png);
+    background-repeat: no-repeat;
+    background-position: 10% 5%;
+}
+
+.best-quality-section .container-text {
+    width: 48%;
+    margin: 15rem 0 auto 0;
 }
 
 .best-quality-section h2 {
-    font-size: 4.5rem;
+    font-size: 4.3rem;
     font-weight: bolder;
     font-family: sans-serif;
     color: darkblue;
@@ -204,18 +194,21 @@ header {
 
 .best-quality-section .rectangle {
     height: 0.7rem;
-    width: 37rem;
+    width: 36rem;
     align-items: center;
-    margin: 2rem 0;
+    margin: 2.2rem 0;
     background-color: red;
 }
 
 .best-quality-section p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+    margin-right: 1.5rem;
+
 }
 
 .best-quality-section button{
-    padding: 1.1rem 2.5rem;
+    padding: 1.2rem 2.8rem;
     margin-top: 1.8rem;
     font-size: 1rem;
     border-radius: 0.2rem;
@@ -229,25 +222,14 @@ header {
     background-color: rgb(194, 7, 7);
 }
 
-.best-quality-section .container {
-    width: 50%;
-}
-
-.best-quality-section .container-text {
-    width: 50%;
-}
-
 .our-services-section {
-    height: 90vh;
-    width: auto;
-    padding-left:10rem;
-    padding-right: 7rem;
+    padding:4rem 7rem 7rem 10rem;
 }
 
 .our-services-section h2 {
     font-size: 3rem;
     font-family: sans-serif;
-    padding: 4rem 0;
+    padding-bottom: 3rem;
 }
 
 .our-services-section .our-services-box h4 {
@@ -282,7 +264,6 @@ header {
 }
 
 .about-section {
-    height: 100vh;
     color: #fff;
     background: blue;
 }
@@ -304,17 +285,18 @@ header {
 }
 
 .about-section .about-text {
-    width: 48%;
+    width: 49%;
     padding-left: 15rem;
 }
 
 .about-section .about-img {
-    width: 48%;
+    width: 50%;
+    margin: 2.5rem 0 5rem 0 ;
 }
 
 .about-section .about-img img {
-    height: 13rem;
-    width: 15rem;
+    height: 15rem;
+    width: 17rem;
 }
 
 .about-section .about-img-container-1 {
@@ -325,15 +307,14 @@ header {
     margin-right: 2rem;
 }
 
-.todo-list-section {
-    height: 70vh;
-    margin-top: 7rem;
-}
-
 .todo-list-section h3 {
     font-size: 2.3rem;
     font-family: sans-serif;
     padding-bottom: 2.5rem;
+}
+
+.todo-list-section {
+    margin: 6rem 0 4rem 0;
 }
 
 .todo-list-section span {
@@ -347,7 +328,7 @@ header {
 }
 
 .todo-list-section button {
-    padding: 1.4rem 2.5rem;
+    padding: 1.4rem 2.6rem;
     font-size: 0.8rem;
     font-weight: 600;
     border-radius: 0.2rem;
@@ -362,8 +343,8 @@ header {
 } 
     
 .todo-list-section input {
-    width: 9.5rem;
-    padding: 1.3rem 0 1.3rem 2.4rem;
+    width: 9rem;
+    padding: 1.25rem 1rem 1.25rem 2.8rem;
     font-size: 0.8rem;
     border-radius: 0.2rem;
     margin-left: 0.8rem;
@@ -373,191 +354,329 @@ header {
     padding-top: 2.3rem;
 }
 
-/*@media (max-width: 1440px) {
-    header {
-        width: 75%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.5rem 7rem;
-        background: #fff;
-    }
 
-
-
-}*/
-
-
-@media (max-width: 769px) {
-    body {
-        width: fit-content;
-    }
-
-    .hero-section {
-        height: 140vh;
+@media (max-width: 1441px) {
+    .hero-section-box {
         width: 100%;
+        height: auto;
         background-image: url(../img/hero-bg.jpg);
         background-repeat: no-repeat;
-        background-position: 34.74% 0%;
-        background-size: cover;
-        overflow: hidden;
+        background-position: 85% 5%;
+        padding: 16rem 0 6rem 6rem;
         color: #fff;
-    }
-
-    .hero-section-box {
-        margin-left: 6rem;
-        padding-top: 10rem;
+        background-size: cover;
     }
 
     .hero-section .hero-text-one {
-        font-size: 2.4rem;
+        font-size: 4.5rem;
         font-weight: lighter;
     }
+
     .hero-section .hero-text-two {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
         font-family: 'Archivo Black', sans-serif;
         font-weight: bolder;
         padding-bottom: 1.3rem;
     }
 
     .rectangle {
-        height: 0.6rem;
-        width: 25rem;
+        height: 0.7rem;
+        width: 35rem;
         align-items: center;
         background-color: #fff;
     }
 
-    .hero-section .hero-container img {
-        width: 5rem;
-    }
-
     .hero-section h6 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-family: sans-serif;
         font-weight: lighter;
-    }
-
-    .hero-section .hero-services-2 {
-        padding: 0 4rem;
     }
 
     .book-now-section {
-        height: 120vh;
-        width: 120%;
-        padding-top: 6rem;
+        height: auto;
+        padding-top: 10rem;
         background: rgb(241, 241, 241);
     }
 
-    .book-now-section h6 {
-        font-family: sans-serif;
-        font-size: 1.1rem;
-        font-weight: lighter;
-        color: gray;
-        padding-bottom: 1rem;
-    }
-
-    .book-now-section h2 {
-        font-family: sans-serif;
-        font-size: 2.9rem;
-        font-weight: bolder;
-        padding-bottom: 1.5rem;
-    }
-
-    .book-now-section p {
-        font-family: sans-serif;
+    .book-now-section button {
+        padding: 1.1rem 2.5rem;
         font-size: 1rem;
-        font-weight: lighter;
-        line-height: 1.5rem;
-        color: rgb(71, 69, 69);
-        padding-bottom: 1.5rem;
-    }
-
-    .need-help-section {
-        width: 90%;
-        height: 100vh;
-        margin: 3.5rem 7rem;
-    }
-
-    .need-help-section .left-container, .right-container {
-        width: 44%;
-    }
-    
-    .need-help-section .left-container img {
-        width: 95%;
-        height: 18rem;
-        padding-bottom: 2rem;
-    }
-
-    .need-help-section .left-container p {
-        font-size: 1.1rem;
-        font-weight: lighter;
-        text-align: left;
-        padding: 0 1rem;
-    }
-
-    .need-help-section .right-container h2 {
-        font-size: 1.7rem;
-        font-family: sans-serif;
-        margin-top: 2.5rem;
-    }
-
-    .need-help-section .right-container h4 {
-        font-size: 1.4rem;
-        font-family: sans-serif;
-        margin-top: 1rem;
-        color: rgb(221, 3, 3);
-    }
-
-    .need-help-section .right-container img {
-        width: 98%;
-        height: 18rem;
-        padding-top: 3rem;
+        border-radius: 0.2rem;
+        border: none;
+        margin-bottom: 6rem;
+        color: #fff;
+        background: rgb(221, 3, 3);
+        cursor: pointer;
     }
 
     .best-quality-section {
-        height: 100vh;
-        width: auto;
+        width: 100%;
+        height: 228vh;
         background: rgb(211, 209, 209);
-        padding: 3.5rem;
     }
 
-    .best-quality-section .container {
-        width: 48%;
-    }
-
-    .best-quality-section img {
-        height: auto;
-        width: 15rem;
-        margin-top: 2rem;
+    .best-quality-section .img-container {
+        background-image: url(../img/quality.png);
+        background-repeat: no-repeat;
+        background-position: 45% 5%;
+        margin: 0 3.9rem;
     }
 
     .best-quality-section .container-text {
-        width: 52%;
+        FONT-WEIGHT: 100;
+        width: 48%;
+        margin: 18rem 0 0 0;
     }
 
     .best-quality-section h2 {
-        font-size: 2.9rem;
+        font-size: 4.5rem;
+        font-weight: bolder;
+        font-family: sans-serif;
+        color: darkblue;
+    }
+
+    .best-quality-section p {
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media (max-width: 1025px) {
+    .hero-section-box {
+        width: 100%;
+        height: auto;
+        background-image: url(../img/hero-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: 85% 5%;
+        padding: 12rem 0 7rem rem;
+        color: #fff;
+        background-size: cover;
+    }
+
+    .best-quality-section {
+        width: 100%;
+        height: 150vh;
+        background: rgb(211, 209, 209);
+    }
+
+    .best-quality-section .container {
+        width: 50%;
+    }
+
+    .best-quality-section .img-container {
+        background-image: url(../img/quality.png);
+        background-repeat: no-repeat;
+        background-position: 50% 5%;
+        background-size: cover;
+    }
+
+    .best-quality-section .container-text {
+        width: 48%;
+        margin-top: 10rem;
+    }
+
+    .best-quality-section h2 {
+        font-size: 3.2rem;
         font-weight: bolder;
         font-family: sans-serif;
         color: darkblue;
     }
 
     .best-quality-section .rectangle {
-        height: 0.4rem;
-        width: 23rem;
+        height: 0.7rem;
+        width: 25rem;
+        align-items: center;
+        margin: 1.8rem 0;
+        background-color: red;
+    }
+
+    .best-quality-section p {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-right: 1.5rem;
+    }
+
+    .our-services-section {
+        padding: 4rem 5rem 5rem 8rem;
+    }
+
+    .our-services-section .our-services-box p {
+        font-size: 1rem;
+        font-family: sans-serif;
+        font-style: italic;
+        line-height: 1.5rem;
+    }
+
+    .about-section .about-text {
+        width: 49%;
+        padding-left: 5rem;
+    }
+
+    .about-section h2 {
+        font-size: 4.5rem;
+        font-weight: lighter;
+    }
+
+    .about-section h3 {
+        font-size: 4rem;
+        font-weight: bolder;
+        font-family: sans-serif;
+    }
+
+    .about-section .about-img {
+        width: 50%;
+        margin: 5rem 0 5rem 0;
+    }
+
+    .about-section .about-img-container-1 {
+        padding-bottom: 1.5rem;
+    }
+
+    .about-section .about-img-container-1 .img-1, .img-3 {
+        margin-right: 1.5rem;
+    }
+
+    .about-section .about-img img {
+        height: 12rem;
+        width: 14rem;
+    }
+
+
+}
+
+@media (max-width: 769px) {
+    .hero-section-box {
+        width: 100%;
+        height: auto;
+        background-image: url(../img/hero-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: 18% 5%;
+        padding: 12rem 0 5rem 3rem;
+        color: #fff;
+        background-size: cover;
+    }
+
+    .hero-section .hero-text-one {
+        font-size: 4rem;
+        font-weight: lighter;
+    }
+
+    .hero-section .hero-text-two {
+        font-size: 5rem;
+        font-family: 'Archivo Black', sans-serif;
+        font-weight: bolder;
+        padding-bottom: 1.3rem;
+    }
+
+    .rectangle {
+        height: 0.7rem;
+        width: 30rem;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .hero-section .hero-container img {
+        width: 5rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .hero-section h6 {
+        font-size: 1.1rem;
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
+
+    .book-now-section p {
+        font-family: sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        font-weight: lighter;
+        color: rgb(71, 69, 69);
+        padding-bottom: 2rem;
+    }
+
+    .need-help-section {
+        width: 100%;
+        flex-direction: column;
+        padding: 4rem 3rem;
+    }
+
+    .need-help-section .left-container {
+        width: 100%;
+    }
+
+    .need-help-section .left-container p {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        line-height: 1.8rem;
+        padding: 0 3.5rem 2.5rem 3.5rem;
+    }
+
+    .best-quality-section {
+        width: 100%;
+        justify-content: space-between;
+        height: 200vh;
+        background: rgb(211, 209, 209);
+    }
+
+    .best-quality-section .img-container {
+        background-image: url(../img/quality.png);
+        background-repeat: no-repeat;
+        background-position: 45% 5%;
+        background-size: cover;
+        margin: 0 2rem;
+    }
+    
+    .need-help-section .right-container {
+        width: 100%;
+    }
+
+    .need-help-text {
+        padding: 0 3.5rem;
+    }
+
+    .need-help-section .right-container img {
+        width: 100%;
+        padding-top: 3.2rem;
+    }
+
+    .best-quality-section {
+        width: 100%;
+        height: 150vh;
+        background: rgb(211, 209, 209);
+    }
+
+    .best-quality-section .container-text {
+        width: 48%;
+        margin-top: 7rem;
+    }
+
+    .best-quality-section h2 {
+        font-size: 3.3rem;
+        font-weight: bolder;
+        font-family: sans-serif;
+        color: darkblue;
+    }
+
+    .best-quality-section .rectangle {
+        height: 0.6rem;
+        width: 20rem;
         align-items: center;
         margin: 1.5rem 0;
         background-color: red;
     }
 
     .best-quality-section p {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-right: 1.8rem;
     }
 
     .best-quality-section button {
-        padding: 0.8rem 2.1rem;
-        margin-top: 1.1rem;
-        font-size: 0.8rem;
+        padding: 1.2rem 2.4rem;
+        margin-top: 1.8rem;
+        font-size: 0.9rem;
         border-radius: 0.2rem;
         border: none;
         color: #fff;
@@ -566,120 +685,269 @@ header {
     }
 
     .our-services-section {
-        height: 100vh;
-        width: auto;
-        padding: 0;
-        margin-left: 2rem;
-    }
-
-    .our-services-section h2 {
-        font-size: 2.7rem;
-        font-family: sans-serif;
-        padding: 3.5rem 0 1.7rem 0;
-    }
-
-    .our-services-section .services {
-        width: 40%;
-        padding-right: 2rem;
-    }
-
-    .our-services-section .services-img {
-        width: 5rem;
-        height: 5rem;
-        background: rgb(240, 1, 1);
-        padding-top: 0.5rem;
-        padding-left: 1rem;
-        border-radius: 50%;
-    }
-
-    .our-services-section .our-services-box h4 {
-        font-size: 1.4rem;
-        font-family: sans-serif;
-        padding: 1.3rem 0;
-    }
-
-    .our-services-section .our-services-box p {
-        font-size: 1rem;
-        font-family: sans-serif;
-        font-style: italic;
+        padding: 4rem 4rem 5rem 7rem;
     }
 
     .about-section {
-        height: auto;
-        color: #fff;
-        background: blue;
         flex-direction: column;
+        padding: 6rem 3rem 0 3rem;
     }
 
     .about-section .about-text {
-        width: auto;
+        width: 100%;
         padding: 0;
-        margin-top: 4rem;
-    }
-
-    .about-section h6 {
-        font-size: 1rem;
-        font-weight: lighter;
-    }
-
-    .about-section h2 {
-        font-size: 4rem;
-        font-weight: lighter;
-    }
-
-    .about-section h3 {
-        font-size: 3.8rem;
-        font-weight: bolder;
-        font-family: sans-serif;
     }
 
     .about-section .about-img {
-        width: auto;
-        margin: 2rem 0;
-    }
-
-    .about-section .about-img-container-1 {
-        padding-bottom: 1rem;
-    }
-
-    .about-section .about-img-container-1 .img-1, .img-3 {
-        margin-right: 1rem;
+        width: 100%;
+        margin: 3rem 0 3rem 0;
     }
 
     .about-section .about-img img {
-        height: 10rem;
-        width: 13rem;
-    }
-
-    .todo-list-section {
-        height: 70vh;
-        margin-top: 6rem;
-        margin-bottom: 7rem;
+        height: 17rem;
+        width: 47%;
     }
 
     .todo-list-section h3 {
         font-size: 2rem;
         font-family: sans-serif;
-        padding-bottom: 1.5rem;
+        padding-bottom: 2.5rem;
     }
-
     .todo-list-section span {
-        font-size: 2.1rem;
+        font-size: 2.2rem;
     }
 
     .todo-list-section p {
         font-size: 1.5rem;
+        line-height: 1.8rem;
         font-weight: lighter;
-        line-height: 2.4rem;
+    }
+}
+
+@media (max-width: 426px) {
+    body{
+        width: 124%;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 3rem;
+        background: #fff;
+    }
+
+    .hero-section-box {
+        width: 100%;
+        height: auto;
+        background-image: url(../img/hero-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: 75% 5%;
+        padding: 20rem 0 4rem 2rem;
+        color: #fff;
+        background-size: cover;
+    }
+
+    .hero-section .hero-text-one {
+        font-size: 2rem;
+        font-weight: lighter;
+        padding-bottom: 0.8rem;
+    }
+
+    .hero-section .hero-text-two {
+        font-size: 3.8rem;
+        font-family: 'Archivo Black', sans-serif;
+        font-weight: bolder;
+        padding-bottom: 1.3rem;
+    }
+
+    .rectangle {
+        height: 0.7rem;
+        width: 22rem;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .hero-section .hero-container img {
+        width: 4rem;
+        padding-bottom: 1rem;
+    }
+
+    .hero-section h6 {
+        font-size: 0.9rem;
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
+
+    .hero-section .hero-services-2 {
+        padding: 0 3rem;
+    }
+
+    .book-now-section {
+        height: auto;
+        padding-top: 7rem;
+        background: rgb(241, 241, 241);
+    }
+
+    .book-now-section h2 {
+        font-family: sans-serif;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding-bottom: 2rem;
+    }
+
+    .book-now-section p {
+        font-family: sans-serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: lighter;
+        color: rgb(71, 69, 69);
+        padding-bottom: 2rem;
+    }
+
+    .need-help-section {
+        width: 100%;
+        flex-direction: column;
+        padding: 4rem 0 4rem 2rem;
+    }
+
+    .need-help-section .left-container p {
+        font-size: 1.4rem;
+        font-weight: lighter;
+        line-height: 1.8rem;
+        padding: 0 0.5rem 2.5rem 0.5rem;
+    }
+
+    .need-help-text {
+        padding: 0 0.5rem;
+    }
+
+    .need-help-section .right-container img {
+        width: 100%;
+        padding-top: 3.2rem;
+        padding-right: 2rem;
+    }
+
+    .best-quality-section {
+        width: 100%;
+        height: auto;
+        background: rgb(211, 209, 209);
+        flex-direction: column;
+    }
+
+    .best-quality-section .img-container {
+        width: 100%;
+        height: 200vh;
+        background-image: url(../img/quality.png);
+        background-repeat: no-repeat;
+        background-position: 73% 5%;
+        background-size: cover;
+        margin: 0;
+    }
+
+    .best-quality-section .container-text {
+        width: 100%;
+        padding: 6rem 0 1.5rem 3rem;
+        margin: 0;
+    }
+
+    .best-quality-section h2 {
+        font-size: 2rem;
+        font-weight: bolder;
+        font-family: sans-serif;
+        color: darkblue;
+    }
+
+    .best-quality-section .rectangle {
+        height: 0.6rem;
+        width: 20rem;
+        align-items: center;
+        margin: 1.5rem 0;
+        background-color: red;
+    }
+
+    .our-services-section {
+        padding: 4rem 0 2rem 4rem;
+    }
+
+    .our-services-section .our-services-box {
+        flex-direction: column;
+    }
+
+    .our-services-section .services {
+        width: 100%;
+        padding: 0;
+    }
+
+    .our-services-section .our-services-box h4 {
+        font-size: 1.7rem;
+        font-family: sans-serif;
+        padding: 1.5rem 0;
+    }
+
+    .our-services-section .our-services-box p {
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        font-style: italic;
+        line-height: 1.9rem;
+        padding: 0 2rem 4rem 0;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 7rem 3rem 0 3rem;
+    }
+
+    .about-section .about-img {
+        width: 100%;
+        margin: 4rem 0 3rem 0;
+    }
+    
+    .about-section .about-img img {
+        height: 23rem;
+        width: 100%;
+    }
+
+    .about-section .about-img-container-1 {
+        padding-bottom: 2rem;
+    }
+
+    .about-section .about-img-container-1 .img-1, .img-3 {
+        padding-bottom: 2rem;
+    }
+
+    .todo-list-section {
+        margin: 6rem 0;
+        padding: 0 1.3rem;
+    }
+
+    .todo-list-section h3 {
+        font-size: 2.5rem;
+        font-family: sans-serif;
+        padding-bottom: 2.5rem;
+    }
+
+    .todo-list-section span {
+        font-size: 2.6rem;
+    }
+
+    .todo-list-section p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        font-weight: lighter;
     }
 
     .todo-list-section .todo-box {
-        padding-top: 2rem;
+        padding-top: 2.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .todo-list-section button {
-        padding: 1.2rem 2.5rem;
-        font-size: 0.7rem;
+        padding: 1.4rem 2.6rem;
+        width: 12rem;
+        font-size: 0.8rem;
         font-weight: 600;
         border-radius: 0.2rem;
         border: none;
@@ -689,290 +957,42 @@ header {
     }
 
     .todo-list-section input {
-        width: 9rem;
-        padding: 1.09rem 0 1.09rem 2.6rem;
-        font-size: 0.7rem;
+        width: 12rem;
+        padding: 1.25rem 1rem 1.25rem 4rem;
+        font-size: 0.8rem;
         border-radius: 0.2rem;
-        margin-left: 0.5rem;
+        margin-top: 3rem;
     }
-
 }
 
-@media (max-width: 426px){
-    body {
-        width: fit-content;
-    }
-
-    header {
+@media (max-width: 376px) {
+    .best-quality-section {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.5rem 3rem;
-        background: #fff;
-    }
-
-    .hero-section {
-        height: 100vh;
-        width: 100%;
-        background-image: url(../img/hero-bg.jpg);
-        background-repeat: no-repeat;
-        background-position: 90.10% 20%;
-        background-size: cover;
-        overflow: hidden;
-        color: #fff;
-    }
-
-    .hero-section-box {
-        margin-left: 3rem;
-        padding-top: 7.5rem;
-    }
-    .hero-section .hero-container {
-        margin-top: 1rem;
-    }
-
-    .hero-section .hero-text-one {
-        font-size: 1.5rem;
-        font-weight: lighter;
-    }
-
-    .hero-section .hero-text-two {
-        font-size: 2.5rem;
-        font-family: 'Archivo Black', sans-serif;
-        font-weight: bolder;
-        padding-bottom: 1.3rem;
-    }
-
-    .rectangle {
-        height: 0.5rem;
-        width: 14rem;
-        align-items: center;
-        background-color: #fff;
-    }
-
-    .hero-section .hero-container img {
-        width: 3rem;
-    }
-
-    .hero-section h6 {
-        font-size: 0.8rem;
-        font-family: sans-serif;
-        font-weight: lighter;
-    }
-
-    .hero-section .hero-services-2 {
-        padding: 0 1rem;
-    }
-
-    .book-now-section {
-        height: 100vh;
-        width: 100%;
-        padding-top: 5rem;
-        background: rgb(241, 241, 241);
-    }
-
-    .book-now-section h6 {
-        font-family: sans-serif;
-        font-size: 1rem;
-        font-weight: lighter;
-        color: gray;
-        padding-bottom: 1rem;
-    }
-    .book-now-section h2 {
-        font-family: sans-serif;
-        font-size: 2.1rem;
-        font-weight: bolder;
-        padding-bottom: 1.5rem;
-    }
-
-    .book-now-section p {
-        font-family: sans-serif;
-        font-size: 0.7rem;
-        font-weight: lighter;
-        line-height: 1.2rem;
-        color: rgb(71, 69, 69);
-        padding-bottom: 2rem;
-    }
-
-    .need-help-section {
+        height: auto;
+        background: rgb(211, 209, 209);
         flex-direction: column;
+        padding-right: 0.7rem;
+    }
+    
+    .best-quality-section .img-container {
         width: 100%;
         height: 200vh;
-        margin: 3rem 2.5rem;
-    }
-
-    .need-help-section .left-container, .right-container {
-        width: 100%;
-    }
-
-    .need-help-section .left-container img {
-        width: 22rem;
-        height: 17rem;
-        padding-bottom: 2rem;
-    }
-
-    .need-help-section .left-container p {
-        width: 90%;
-        font-size: 1.1rem;
-        font-weight: lighter;
-        text-align: left;
-        padding: 0 2rem;
-    }
-
-    .need-help-section .right-container h2 {
-        font-size: 1.7rem;
-        font-family: sans-serif;
-        margin-top: 3rem;
-        padding-left: 2rem;
-    }
-
-    .need-help-section .right-container h4 {
-        font-size: 1.3rem;
-        font-family: sans-serif;
-        margin-top: 1rem;
-        padding-left: 2rem;
-        color: rgb(221, 3, 3);
-    }
-
-    .need-help-section .right-container img {
-        width: 22rem;
-        height: 17rem;
-        padding-top: 2rem;
-    }
-
-    .best-quality-section {
-        height: auto;
-        width: auto;
-        flex-direction: column;
-        background: rgb(211, 209, 209);
-        padding: 0.8rem;
-    }
-
-    .best-quality-section .container {
-        width: auto;
-    }
-
-    .best-quality-section img {
-        height: 30rem;
-        width: 22rem;
-        margin-bottom: 4rem;
-        margin-top: 0;
-    }
-
-    .best-quality-section .container-text {
-        width: auto;
-        padding: 0 2rem;
-    }
-
-    .best-quality-section h2 {
-        font-size: 2.7rem;
-        font-weight: bolder;
-        font-family: sans-serif;
-        color: darkblue;
-    }
-
-    .best-quality-section .rectangle {
-        height: 0.5rem;
-        width: 23rem;
-        align-items: center;
-        margin: 1.5rem 0;
-        background-color: red;
-    }
-
-    .our-services-section {
-        height: auto;
-        width: auto;
-        padding: 0;
-        margin-left: 2rem;
-    }
-
-    .our-services-section h2 {
-        font-size: 2.7rem;
-        font-family: sans-serif;
-        padding: 3.5rem 0;
-    }
-
-    .our-services-box {
-        flex-direction: column;
-    }
-
-    .our-services-section .services {
-        width: 100%;
-        padding-right: 3rem;
-    }
-
-    .our-services-section .our-services-box p {
-        font-size: 1rem;
-        font-family: sans-serif;
-        font-style: italic;
-        line-height: 1.5rem;
-        margin-bottom: 3rem;
-    }
-
-    .about-section {
-        height: auto;
-        color: #fff;
-        background: blue;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .about-section .about-text {
-        width: auto;
-        padding-left: 2rem;
-        margin-top: 3rem;
-    }
-
-    .about-section h2 {
-        font-size: 3rem;
-        font-weight: lighter;
-    }
-
-    .about-section h3 {
-        font-size: 2.8rem;
-        font-weight: bolder;
-        font-family: sans-serif;
-    }
-
-    .about-section .about-img {
-        width: auto;
-        margin-top: 2rem;
-    }
-
-    .about-section .about-img img {
-        height: 15rem;
-        width: 22rem;
-        margin: 0 1rem 1rem 2rem;
-    }
-
-    .about-section .about-img-container-1, .img-1, .img-3 {
+        background-image: url(../img/quality.png);
+        background-repeat: no-repeat;
+        background-position: 43% 5%;
+        background-size: cover;
         margin: 0;
-        padding: 0;
-    }
-
-    .todo-list-section {
-        height: 50vh;
-        margin-top: 3rem;
-        margin-bottom: 4rem;
-    }
-
-    .todo-list-section h3 {
-        font-size: 1.1rem;
-        font-family: sans-serif;
-        padding-bottom: 1.5rem;
-    }
-
-    .todo-list-section span {
-        font-size: 1.2rem;
-    }
-
-    .todo-list-section p {
-        font-size: 1rem;
-        font-weight: lighter;
-        line-height: 1.5rem;
     }
 }
 
-
-
-
+@media (max-width:326px) {
+    .best-quality-section .img-container {
+        width: 100%;
+        height: 200vh;
+        background-image: url(../img/quality.png);
+        background-repeat: no-repeat;
+        background-position: 20% 5%;
+        background-size: cover;
+        margin: 0;
+    }
+}
